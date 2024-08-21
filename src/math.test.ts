@@ -2,6 +2,7 @@ import { expect, test, describe } from 'vitest';
 import { add, subtract } from './math.js';
 
 describe('math functions', () => {
+  //we can use it() too
   test('add function correctly adds two numbers', () => {
     const result = add(2, 3)
     expect(result).toBe(5);
