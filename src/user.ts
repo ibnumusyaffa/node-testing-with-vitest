@@ -15,6 +15,6 @@ export const createUser = async (userData: Omit<User, "id">): Promise<Boolean> =
     throw new ValidationError("Name must be between 2 and 50 characters")
   }
 
-  const newUser = { id: randomUUID(), ...userData }
-  return db.createUser(newUser)
+
+  return db.createUser(userData)
 }

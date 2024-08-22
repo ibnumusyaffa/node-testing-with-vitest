@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "test": "vitest --coverage",
+    "test": "vitest",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|jsx|tsx)\""
   },
   "keywords": [],

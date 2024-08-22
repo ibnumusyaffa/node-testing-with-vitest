@@ -11,7 +11,7 @@ const pool = mysql.createPool({
 
 export const createUser = async (user: User): Promise<Boolean> => {
   const query = 'INSERT INTO users (id, name, email) VALUES (?, ?, ?)';
-  const values = [user.id, user.name, user.email];
+  const values = [user.name, user.email];
 
   try {
     const [result] = await pool.execute(query, values);
